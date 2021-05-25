@@ -1,4 +1,6 @@
 .Badge{
+    display:flex;
+    flex-direction: column;
     max-width: 350px;
     min-height: 400px;
     border-radius: 15px;
@@ -11,33 +13,48 @@
     overflow: hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    
-
 }
 
-.badge__userInfo{
-
+.Badge__userInfo{
+    position: relative;
 }
 
-.badge__userInfo p{
-
+.Badge__userInfo p{
+ font-size: small;
+ color: rgb(138, 138, 138);
 }
 
-.badge__userImage{
-
+.Badge__userImage{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border:5px solid white;
+  background:white;
+  align-self: center;
+  overflow: hidden;
+  position: absolute;
+  left: 100px;
+  top: -120px;
+  z-index: 1;
 }
 
-.badge__userImage img{
-
+.Badge__userImage img{
+width: 100%;
+object-fit: cover;
+object-position: center;
 }
 
-.badge__info{
-
+.Badge__info{
+border-top: 1px solid rgb(230, 230, 230);
 }
-.badge__info p{
-
+.Badge__info p{
+font-weight: 100;
+font-size: smaller;
+color: rgb(138, 138, 138);
 }
 
 i{
-
+font-style: normal;
+font-weight: 100;
+color: rgb(138, 138, 138);
 }

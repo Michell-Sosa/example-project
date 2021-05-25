@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HeaderBackground from '../images/badge_header.jpg'
-import ProfilePic from '../images/profile1.jpg'
+import ProfilePic from '../images/profile.jpg'
 import "./style/Badge.css";
 
 class Badge extends Component {
@@ -11,13 +11,30 @@ class Badge extends Component {
           <div className="Badge__header">
             <img src={HeaderBackground} alt="header_background" />
           </div>
-          <div className="badge__userInfo container mt-5 mb-1">
-            
+          <div className="Badge__userInfo container mt-5 mb-1">
+            <div className="Badge__userImage">
+            <img src={ProfilePic} alt="Profile_picture" />  
+            </div>
+              <h4 className="text-center mt-5"> Mariel Aguirre <i>22</i> </h4>
+            <p className="text-center">New York City</p>
           </div>
-          <div className="badge__info container pt-3">
-
+          <div className="Badge__info container pt-3">
+            <div className="row">
+              <div className="col">
+                <h4 className="text-center fw bold">95k</h4>
+                <p className="text-center">Followers</p>
+              </div>
+              <div className="col">
+                <h4 className="text-center fw bold">50k</h4>
+                <p className="text-center">Likes</p>
+              </div>
+              <div className="col">
+              <h4 className="text-center fw bold">40k</h4>
+              <p className="text-center">Shared</p>
+              </div>
+            </div>
+           </div>
           </div>
-        </div>
         </React.Fragment>);
     }
 }
