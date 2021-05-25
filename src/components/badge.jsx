@@ -11,10 +11,10 @@ class Badge extends Component {
           <div className="Badge__header">
             <img src={HeaderBackground} alt="header_background" />
           </div>
-          <div className="Badge__userInfo container mt-5 mb-1">
-
+          <div className="badge__userInfo container mt-5 mb-1">
+            
           </div>
-          <div className="Badge__info container pt-3">
+          <div className="badge__info container pt-3">
 
           </div>
         </div>
