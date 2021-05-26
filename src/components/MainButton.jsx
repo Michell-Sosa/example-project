@@ -10,3 +10,4 @@ const Button = props =>{
     </React.Fragment>
  );
 }
+export default Button;

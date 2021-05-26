@@ -6,7 +6,7 @@
     border: 2px solid white;
     border-radius: 40px;
     margin-top: 2em;
-    background-color: rgb(16, 17, 17);
+    background-color: rgba(16, 17, 17, 0.705);
 }
 
 .Button p{
