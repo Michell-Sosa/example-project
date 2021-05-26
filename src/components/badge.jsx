@@ -13,7 +13,7 @@ class Badge extends Component {
           </div>
           <div className="Badge__userInfo container mt-5 mb-1">
             <div className="Badge__userImage">
-            <img src={ProfilePic} alt="Profile_picture" />  
+            <img src={this.props.picture} alt="Profile_picture" />  
             </div>
               <h4 className="text-center mt-5"> Mariel Aguirre <i>22</i> </h4>
             <p className="text-center">New York City</p>
