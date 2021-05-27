@@ -1,0 +1,25 @@
+.title{
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    text-shadow:0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+}
+.Infouser{
+    background-color: rgb(181, 214, 180);
+    margin-left: 470px;
+    width: 450px;
+    border: 0.3px solid rgb(199, 202, 206);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.button{
+    color: white;
+    font-size: 1.2em;
+    margin: 8px 60px;
+    padding-top: 5px;
+}
+
+.from-group{
+    text-align: center;
+    text-align-last: center;
+}

@@ -15,5 +15,7 @@
 }
 
 .Submit__button:hover{
-    
+    background-color:teal;
+    color:whitesmoke;
+    font-weight: bold; 
 }

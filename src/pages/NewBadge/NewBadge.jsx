@@ -3,11 +3,11 @@ import Hero from "../../components/Hero"
 import Badge from "../../components/badge"
 import BadgeForm from "../../components/BadgeForm"
 import "./NewBadge.css"
+import api from "../../lbs/api"
 
 class NewBadge extends React.Component{
-
 state = {
-    loading : false,
+    loading: false,
     error: null,
     form:{
         header_pic: "",
@@ -18,8 +18,8 @@ state = {
         followers:"",
         likes: "",
         post: "",
-    }
-}
+    },
+};
 
 handleChange = event =>{
     this.setState({
@@ -33,12 +33,21 @@ handleChange = event =>{
 
 handleSubmit = async(event) =>{
     event.preventDefault();
+    this.setState({loading:true, error:null})
+
+    try{
+      await api.badges.create(this.state.from)
+      this.setState({loading:false, error:null})
+      this.props.history.push("/")
+    } catch(error){
+     this.setState({loading:false, error:error})
+    }
 }
 
     render(){
         return(
         <React.Fragment>
-            <Hero h={"15vh"}></Hero>
+            <Hero h={"15vh"} picture={"https://c.wallhere.com/photos/0c/b7/wild_animal_zoo_stockholm_snake_rattlesnake_breathtaking_orm-896941.jpg!d"} ></Hero>
             <div className="container">
              <div className="row">
                 <div className="col-6">
@@ -47,7 +56,7 @@ handleSubmit = async(event) =>{
                 profile_picture = {this.state.form.profile_picture || "https://i.pinimg.com/originals/1e/25/4e/1e254e256307b5b9233e4970c1d3aaeb.jpg"}
                 name = {this.state.form.name || "Mariel Aguirre"}
                 age = {this.state.form.age || "21"}
-                city = {this.state.form.age || "Tokyo, Japan"}
+                city = {this.state.form.city || "Tokyo, Japan"}
                 followers = {this.state.form.followers || "0"}
                 likes = {this.state.form.likes || "0"}
                 post = {this.state.form.post || "0"}

@@ -33,7 +33,7 @@ class BadgeForm extends Component{
                     </div>
                     <div className="from-group mb-2">
                         <label className="mb-1">
-                        Badge Hero URL
+                        Badge Header URL
                         </label>
                         <input 
                         type="text" 
