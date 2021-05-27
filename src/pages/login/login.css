@@ -1,0 +1,26 @@
+.title{
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+}
+.user{
+    background-color: rgb(255, 255, 255);
+    margin-top: 68px;
+    margin-left: 470px;
+    width: 450px;
+    border: 0.3px solid rgb(1, 43, 8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow:0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.button{
+    color: white;
+    font-size: 1.2em;
+    margin: 8px 60px;
+    padding-top: 5px;
+}
+
+.from-group{
+    text-align: center;
+    text-align-last: center;
+}

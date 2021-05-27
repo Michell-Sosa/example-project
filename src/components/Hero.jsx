@@ -9,12 +9,10 @@ const Hero = (props) => {
     <div className="Hero__color_filter" style={{height: props.h}}></div>
     <div className="Hero__img" style={{height: props.h}}>
         <img src={props.picture} alt="Snake" />
-
-
     </div>
 </div>
 
         </React.Fragment>
-    );
+    )
 }
-export default Hero
+export default Hero;
