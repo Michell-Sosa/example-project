@@ -9,27 +9,28 @@ class Badge extends Component {
         <React.Fragment>
         <div className="Badge m-5 flex-column">
           <div className="Badge__header">
-            <img src={HeaderBackground} alt="header_background" />
+            <img src={this.props.header_pic} alt="header_background" />
           </div>
           <div className="Badge__userInfo container mt-5 mb-1">
             <div className="Badge__userImage">
-            <img src={this.props.picture} alt="Profile_picture" />  
+            <img src={this.props.profile_picture} alt="Profile_picture" />  
             </div>
-              <h4 className="text-center mt-5"> Mariel Aguirre <i>22</i> </h4>
-            <p className="text-center">New York City</p>
+              <h4 className="text-center mt-5"> 
+              {this.props.name} <i>{this.props.age}</i> </h4>
+            <p className="text-center">{this.props.city}</p>
           </div>
           <div className="Badge__info container pt-3">
             <div className="row">
               <div className="col">
-                <h4 className="text-center fw bold">95k</h4>
+                <h4 className="text-center fw bold">{this.props.followers}</h4>
                 <p className="text-center">Followers</p>
               </div>
               <div className="col">
-                <h4 className="text-center fw bold">50k</h4>
+                <h4 className="text-center fw bold">{this.props.likes}</h4>
                 <p className="text-center">Likes</p>
               </div>
               <div className="col">
-              <h4 className="text-center fw bold">40k</h4>
+              <h4 className="text-center fw bold">{this.props.post}</h4>
               <p className="text-center">Shared</p>
               </div>
             </div>

@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from './pages/layout/layout'
 import Main from './pages/main/main'
+import NewBadge from './pages/NewBadge/NewBadge'
 
 function App() {
   return (
     <React.Fragment>
       <Layout>
-      <Main title={"Welcome hunters!"}></Main>
+      <NewBadge></NewBadge>
       </Layout>
     </React.Fragment>
   );
